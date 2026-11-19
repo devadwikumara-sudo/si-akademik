@@ -1,0 +1,13 @@
+<?php
+namespace App\Core\Middleware;
+
+class AuthMiddleware
+{
+    public function handle(): void
+    {
+        if (empty($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+            header('Location: ' . BASE_URL . '/login');
+            exit;
+        }
+    }
+}

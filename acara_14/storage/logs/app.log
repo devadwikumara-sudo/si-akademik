@@ -1,0 +1,7 @@
+[2026-11-12 03:42:09] PDOException: SQLSTATE[HY000] [1049] Unknown database 'si_akademik_bkpmm' in C:\laragon\www\si_akademik\acara_14\app\Core\Database.php:21
+#0 C:\laragon\www\si_akademik\acara_14\app\Core\Database.php(21): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\laragon\www\si_akademik\acara_14\app\Core\Database.php(30): App\Core\Database->__construct()
+#2 C:\laragon\www\si_akademik\acara_14\public\index.php(52): App\Core\Database::getInstance()
+#3 C:\laragon\www\si_akademik\acara_14\public\index.php(73): {closure}(Array)
+#4 {main}
+
